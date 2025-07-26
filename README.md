@@ -29,3 +29,12 @@ apt-get update
 pip install flask geocoder pandas requests beautifulsoup4 numpy pytz selenium
 apt install chromium-chromedriver
 cp /usr/lib/chromium-browser/chromedriver /usr/bin
+```
+
+### Running Tests
+
+Tests are written with `pytest`. After installing the requirements run:
+
+```bash
+pytest
+```
