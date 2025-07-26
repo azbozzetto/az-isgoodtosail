@@ -192,7 +192,7 @@ def good_conditions():
     for year in range(min_year, max_year + 1):
         start_month = min_month if year == min_year else 1
         end_month = max_month if year == max_year else 12
-        for month in range(min_month, max_month + 1):
+        for month in range(start_month, end_month + 1):
             tide_df = generate_tide_table(str(year), str(month), harbour)
             all_tide_df = pd.concat([all_tide_df, tide_df])
 
