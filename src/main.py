@@ -244,7 +244,7 @@ def webhook():
             parameters = query_result.get('parameters')          
             location = parameters.get('city')
             
-            # Step 2:  Extract details from BigQuery
+            # Step 2: fetch forecast data if location is provided
             if location:
                 print(query_text)
                 result_df = good_conditions(query_text)
